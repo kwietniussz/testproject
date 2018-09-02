@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            box-sizing: border-box;
+
+        }
+
+        ul {
+            background-color: #0f0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+
+        ul li {
+            display: inline-block;
+            list-style-type: none;
+            text-align: center;
+            padding: 20px;
+
+            width: calc(100%/4 - 50px);
+        }
+
+        ul ul {
+            display: none;
+            height: auto;
+            position: absolute;
+        }
+
+        ul ul li {
+            display: block;
+
+        }
+
+        ul li:hover>ul {
+            display: block;
+
+        }
+
+        @media screen and (max-width: 420px) {
+            ul li {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            ul ul {
+                position: static;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>obiekt1<ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </li>
+        <li>obiekt2<ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </li>
+        <li>obiekt3<ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </li>
+        <li>obiekt4<ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
